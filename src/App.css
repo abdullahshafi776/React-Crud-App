@@ -1,0 +1,261 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+}
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 44;
+}
+
+.back_btn {
+    cursor: pointer;
+}
+
+.weather {
+    position: relative;
+    height: 510px;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.inp_feild {
+    border-radius: 25px;
+    border: 2px solid #609;
+    width: 250px;
+    margin: auto;
+}
+
+.social i {
+    font-size: 20px;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.web {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#qnty form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#qnty .value-button {
+    font-size: 23px;
+    color: gray;
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#qnty .value-button:hover {
+    cursor: pointer;
+}
+
+#qnty form #decrease {
+    margin-right: -4px;
+}
+
+#qnty form #increase {
+    margin-left: -4px;
+}
+
+#qnty form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+#qnty input#number {
+    text-align: center;
+    border: none;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.todo_cont {
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+}
+
+.inp_div {
+    height: 50vh;
+}
+
+.todo_list {
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+}
+
+.add_btn {
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    border: none;
+}
+
+.inp_div input:focus,
+.add_btn:focus {
+    box-shadow: none;
+    border-color: #ffffff;
+}
+
+#qnty input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.web:hover {
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+#head .logo {
+    width: 110px;
+    height: 77px;
+    object-fit: cover;
+}
+
+#head .nam {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#head ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 24px;
+    font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+    color: #1e3758;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+#head ul li a:hover {
+    color: #cf1414;
+}
+
+#head .line {
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#head .topic {
+    background-image: linear-gradient(130deg, #292a2b 20%, #f84707 100%);
+}
+
+#para .text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 5px;
+    font-family: "Faustina", sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+#para .video {
+    width: 710px;
+    height: 400px;
+}
+
+#para .topic {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+#para .express {
+    color: blue;
+}
+
+.form_head {
+    background-image: linear-gradient(130deg, #292a2b 20%, #f84707 100%);
+}
+
+.adds {
+    width: 85%;
+    height: auto;
+}
+
+.tst {
+    border: 1px solid red;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+.table td,
+.table th {
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+    #para .video {
+        width: 430px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #head .nam {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #para .video {
+        width: 310px;
+        height: 200px;
+    }
+}
