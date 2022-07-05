@@ -26,7 +26,7 @@ export default function Editreduxcrud({ history }) {
   useEffect(() => {
     if (success) {
       dispatch(resetUser());
-      history.push("/");
+      history.push("/crud-app");
     } else {
       if (user.length === 0) {
         dispatch(getUser(id));
@@ -42,7 +42,10 @@ export default function Editreduxcrud({ history }) {
         <div className="row">
           <div className="col-12">
             <div className="text-left">
-              <div className="back_btn" onClick={() => history.push("/")}>
+              <div
+                className="back_btn"
+                onClick={() => history.push("/crud-app")}
+              >
                 <i className="fas fa-arrow-circle-left fa-2x"></i>
               </div>
             </div>

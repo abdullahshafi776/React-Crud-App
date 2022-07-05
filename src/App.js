@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/" component={Reduxcrud} />
+        <Route exact path="/crud-app" component={Reduxcrud} />
         <Route exact path="/editcrud/:id" component={Editreduxcrud} />
       </Switch>
     </Router>
